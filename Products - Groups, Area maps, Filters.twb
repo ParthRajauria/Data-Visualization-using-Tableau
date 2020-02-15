@@ -1,0 +1,1971 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20194.20.0119.2058                               -->
+<workbook original-version='18.1' source-build='2019.4.2 (20194.20.0119.2058)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='SampleData' inline='true' name='federated.1x9db3t0r0mgng111wb3z06fb29j' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='SampleData' name='textscan.0v7w28e1yw60vg1f3h4qu1nfgfgi'>
+            <connection class='textscan' directory='/Users/parthrajauria/Desktop/DSML/Udemy/Tableau Course' filename='SampleData.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0v7w28e1yw60vg1f3h4qu1nfgfgi' name='SampleData.csv' table='[SampleData#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='Sale ID' ordinal='0' />
+            <column datatype='integer' name='Salesperson' ordinal='1' />
+            <column datatype='string' name='First Name' ordinal='2' />
+            <column datatype='string' name='Last Name' ordinal='3' />
+            <column datatype='string' name='VIP' ordinal='4' />
+            <column datatype='date' name='Date of Birth' ordinal='5' />
+            <column datatype='string' name='Gender' ordinal='6' />
+            <column datatype='string' name='Country' ordinal='7' />
+            <column datatype='integer' name='Item Quantity' ordinal='8' />
+            <column datatype='real' name='Item Price' ordinal='9' />
+            <column datatype='string' name='Item Colour' ordinal='10' />
+            <column datatype='string' name='Item Size' ordinal='11' />
+            <column datatype='string' name='Item Range' ordinal='12' />
+            <column datatype='real' name='Item COGS' ordinal='13' />
+            <column datatype='real' name='Item Profit' ordinal='14' />
+            <column datatype='date' name='PurchaseDate' ordinal='15' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[SampleData.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;Rs&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sale ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sale ID]</local-name>
+            <parent-name>[SampleData.csv]</parent-name>
+            <remote-alias>Sale ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Salesperson</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Salesperson]</local-name>
+            <parent-name>[SampleData.csv]</parent-name>
+            <remote-alias>Salesperson</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>First Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[First Name]</local-name>
+            <parent-name>[SampleData.csv]</parent-name>
+            <remote-alias>First Name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Last Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Last Name]</local-name>
+            <parent-name>[SampleData.csv]</parent-name>
+            <remote-alias>Last Name</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VIP</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[VIP]</local-name>
+            <parent-name>[SampleData.csv]</parent-name>
+            <remote-alias>VIP</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date of Birth</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date of Birth]</local-name>
+            <parent-name>[SampleData.csv]</parent-name>
+            <remote-alias>Date of Birth</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[SampleData.csv]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[SampleData.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item Quantity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Item Quantity]</local-name>
+            <parent-name>[SampleData.csv]</parent-name>
+            <remote-alias>Item Quantity</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item Price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Item Price]</local-name>
+            <parent-name>[SampleData.csv]</parent-name>
+            <remote-alias>Item Price</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item Colour</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Item Colour]</local-name>
+            <parent-name>[SampleData.csv]</parent-name>
+            <remote-alias>Item Colour</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item Size</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Item Size]</local-name>
+            <parent-name>[SampleData.csv]</parent-name>
+            <remote-alias>Item Size</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item Range</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Item Range]</local-name>
+            <parent-name>[SampleData.csv]</parent-name>
+            <remote-alias>Item Range</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item COGS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Item COGS]</local-name>
+            <parent-name>[SampleData.csv]</parent-name>
+            <remote-alias>Item COGS</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item Profit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Item Profit]</local-name>
+            <parent-name>[SampleData.csv]</parent-name>
+            <remote-alias>Item Profit</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PurchaseDate</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[PurchaseDate]</local-name>
+            <parent-name>[SampleData.csv]</parent-name>
+            <remote-alias>PurchaseDate</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Item Colour, Item Range, Item Size (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Item Colour, Item Range, Item Size]' default='&quot;Other&quot;' new-bin='true'>
+          <bin default-name='true' value='&quot;(COLOUR-WHITE, RANGE-OTHER, SIZE-S)&quot;'>
+            <value>(&quot;COLOUR-WHITE&quot;,&quot;RANGE-OTHER&quot;,&quot;SIZE-S&quot;)</value>
+          </bin>
+        </calculation>
+      </column>
+      <column caption='lower_profit_items' datatype='string' name='[Item Colour, Item Range, Item Size 1 (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Item Colour, Item Range, Item Size 1]' default='&quot;Other&quot;' new-bin='true'>
+          <bin default-name='true' value='&quot;(COLOUR-BLACK, RANGE-JACKET, SIZE-XL), (COLOUR-BLACK, RANGE-OTHER, SIZE-M), (COLOUR-BLACK, RANGE-OTHER, SIZE-XL) and 33 more&quot;'>
+            <value>(&quot;COLOUR-BLACK&quot;,&quot;RANGE-JACKET&quot;,&quot;SIZE-XL&quot;)</value>
+            <value>(&quot;COLOUR-BLACK&quot;,&quot;RANGE-OTHER&quot;,&quot;SIZE-M&quot;)</value>
+            <value>(&quot;COLOUR-BLACK&quot;,&quot;RANGE-OTHER&quot;,&quot;SIZE-XL&quot;)</value>
+            <value>(&quot;COLOUR-BLACK&quot;,&quot;RANGE-PANT&quot;,&quot;SIZE-L&quot;)</value>
+            <value>(&quot;COLOUR-BLACK&quot;,&quot;RANGE-PANT&quot;,&quot;SIZE-M&quot;)</value>
+            <value>(&quot;COLOUR-BLACK&quot;,&quot;RANGE-PANT&quot;,&quot;SIZE-XL&quot;)</value>
+            <value>(&quot;COLOUR-BLACK&quot;,&quot;RANGE-PANT&quot;,&quot;SIZE-XXL&quot;)</value>
+            <value>(&quot;COLOUR-BLACK&quot;,&quot;RANGE-SHIRT&quot;,&quot;SIZE-XL&quot;)</value>
+            <value>(&quot;COLOUR-BLUE&quot;,&quot;RANGE-JACKET&quot;,&quot;SIZE-M&quot;)</value>
+            <value>(&quot;COLOUR-BLUE&quot;,&quot;RANGE-OTHER&quot;,&quot;SIZE-L&quot;)</value>
+            <value>(&quot;COLOUR-BLUE&quot;,&quot;RANGE-OTHER&quot;,&quot;SIZE-S&quot;)</value>
+            <value>(&quot;COLOUR-BLUE&quot;,&quot;RANGE-OTHER&quot;,&quot;SIZE-XL&quot;)</value>
+            <value>(&quot;COLOUR-BLUE&quot;,&quot;RANGE-OTHER&quot;,&quot;SIZE-XXL&quot;)</value>
+            <value>(&quot;COLOUR-BLUE&quot;,&quot;RANGE-PANT&quot;,&quot;SIZE-XL&quot;)</value>
+            <value>(&quot;COLOUR-BLUE&quot;,&quot;RANGE-SHIRT&quot;,&quot;SIZE-L&quot;)</value>
+            <value>(&quot;COLOUR-BLUE&quot;,&quot;RANGE-SHIRT&quot;,&quot;SIZE-S&quot;)</value>
+            <value>(&quot;COLOUR-GREEN&quot;,&quot;RANGE-JACKET&quot;,&quot;SIZE-S&quot;)</value>
+            <value>(&quot;COLOUR-GREEN&quot;,&quot;RANGE-JACKET&quot;,&quot;SIZE-XL&quot;)</value>
+            <value>(&quot;COLOUR-GREEN&quot;,&quot;RANGE-JACKET&quot;,&quot;SIZE-XXL&quot;)</value>
+            <value>(&quot;COLOUR-GREEN&quot;,&quot;RANGE-OTHER&quot;,&quot;SIZE-L&quot;)</value>
+            <value>(&quot;COLOUR-GREEN&quot;,&quot;RANGE-OTHER&quot;,&quot;SIZE-M&quot;)</value>
+            <value>(&quot;COLOUR-GREEN&quot;,&quot;RANGE-OTHER&quot;,&quot;SIZE-XL&quot;)</value>
+            <value>(&quot;COLOUR-GREEN&quot;,&quot;RANGE-OTHER&quot;,&quot;SIZE-XXL&quot;)</value>
+            <value>(&quot;COLOUR-GREEN&quot;,&quot;RANGE-PANT&quot;,&quot;SIZE-M&quot;)</value>
+            <value>(&quot;COLOUR-GREEN&quot;,&quot;RANGE-PANT&quot;,&quot;SIZE-S&quot;)</value>
+            <value>(&quot;COLOUR-GREEN&quot;,&quot;RANGE-PANT&quot;,&quot;SIZE-XXL&quot;)</value>
+            <value>(&quot;COLOUR-GREEN&quot;,&quot;RANGE-SHIRT&quot;,&quot;SIZE-L&quot;)</value>
+            <value>(&quot;COLOUR-GREEN&quot;,&quot;RANGE-SHIRT&quot;,&quot;SIZE-S&quot;)</value>
+            <value>(&quot;COLOUR-WHITE&quot;,&quot;RANGE-JACKET&quot;,&quot;SIZE-XL&quot;)</value>
+            <value>(&quot;COLOUR-WHITE&quot;,&quot;RANGE-OTHER&quot;,&quot;SIZE-XXL&quot;)</value>
+            <value>(&quot;COLOUR-WHITE&quot;,&quot;RANGE-PANT&quot;,&quot;SIZE-L&quot;)</value>
+            <value>(&quot;COLOUR-WHITE&quot;,&quot;RANGE-PANT&quot;,&quot;SIZE-S&quot;)</value>
+            <value>(&quot;COLOUR-WHITE&quot;,&quot;RANGE-PANT&quot;,&quot;SIZE-XL&quot;)</value>
+            <value>(&quot;COLOUR-WHITE&quot;,&quot;RANGE-PANT&quot;,&quot;SIZE-XXL&quot;)</value>
+            <value>(&quot;COLOUR-WHITE&quot;,&quot;RANGE-SHIRT&quot;,&quot;SIZE-L&quot;)</value>
+            <value>(&quot;COLOUR-WHITE&quot;,&quot;RANGE-SHIRT&quot;,&quot;SIZE-M&quot;)</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[Item Colour]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Item Range]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Item Size]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' name='[Sale ID]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[VIP]' role='dimension' type='nominal' />
+      <column-instance column='[VIP]' derivation='None' name='[none:VIP:nk]' pivot='key' type='nominal' />
+      <group auto-hidden='true' hidden='true' name='[Item Colour, Item Range, Item Size 1]' name-style='unqualified'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Item Colour]' />
+          <groupfilter function='level-members' level='[Item Range]' />
+          <groupfilter function='level-members' level='[Item Size]' />
+        </groupfilter>
+      </group>
+      <group auto-hidden='true' hidden='true' name='[Item Colour, Item Range, Item Size]' name-style='unqualified'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Item Colour]' />
+          <groupfilter function='level-members' level='[Item Range]' />
+          <groupfilter function='level-members' level='[Item Size]' />
+        </groupfilter>
+      </group>
+      <layout dim-ordering='alphabetic' dim-percentage='0.593972' measure-ordering='alphabetic' measure-percentage='0.406028' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='shape' field='[none:VIP:nk]' type='shape'>
+            <map to='circle'>
+              <bucket>&quot;N&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;Y&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Item Colour, Item Range, Item Size 1 (group)]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;(COLOUR-BLACK, RANGE-JACKET, SIZE-XL), (COLOUR-BLACK, RANGE-OTHER, SIZE-M), (COLOUR-BLACK, RANGE-OTHER, SIZE-XL) and 33 more&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Other&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='SampleData' name='federated.1x9db3t0r0mgng111wb3z06fb29j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1x9db3t0r0mgng111wb3z06fb29j'>
+            <column caption='lower_profit_items' datatype='string' name='[Item Colour, Item Range, Item Size 1 (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Item Colour, Item Range, Item Size 1]' default='&quot;Other&quot;' new-bin='true'>
+                <bin default-name='true' value='&quot;(COLOUR-BLACK, RANGE-JACKET, SIZE-XL), (COLOUR-BLACK, RANGE-OTHER, SIZE-M), (COLOUR-BLACK, RANGE-OTHER, SIZE-XL) and 33 more&quot;'>
+                  <value>(&quot;COLOUR-BLACK&quot;,&quot;RANGE-JACKET&quot;,&quot;SIZE-XL&quot;)</value>
+                  <value>(&quot;COLOUR-BLACK&quot;,&quot;RANGE-OTHER&quot;,&quot;SIZE-M&quot;)</value>
+                  <value>(&quot;COLOUR-BLACK&quot;,&quot;RANGE-OTHER&quot;,&quot;SIZE-XL&quot;)</value>
+                  <value>(&quot;COLOUR-BLACK&quot;,&quot;RANGE-PANT&quot;,&quot;SIZE-L&quot;)</value>
+                  <value>(&quot;COLOUR-BLACK&quot;,&quot;RANGE-PANT&quot;,&quot;SIZE-M&quot;)</value>
+                  <value>(&quot;COLOUR-BLACK&quot;,&quot;RANGE-PANT&quot;,&quot;SIZE-XL&quot;)</value>
+                  <value>(&quot;COLOUR-BLACK&quot;,&quot;RANGE-PANT&quot;,&quot;SIZE-XXL&quot;)</value>
+                  <value>(&quot;COLOUR-BLACK&quot;,&quot;RANGE-SHIRT&quot;,&quot;SIZE-XL&quot;)</value>
+                  <value>(&quot;COLOUR-BLUE&quot;,&quot;RANGE-JACKET&quot;,&quot;SIZE-M&quot;)</value>
+                  <value>(&quot;COLOUR-BLUE&quot;,&quot;RANGE-OTHER&quot;,&quot;SIZE-L&quot;)</value>
+                  <value>(&quot;COLOUR-BLUE&quot;,&quot;RANGE-OTHER&quot;,&quot;SIZE-S&quot;)</value>
+                  <value>(&quot;COLOUR-BLUE&quot;,&quot;RANGE-OTHER&quot;,&quot;SIZE-XL&quot;)</value>
+                  <value>(&quot;COLOUR-BLUE&quot;,&quot;RANGE-OTHER&quot;,&quot;SIZE-XXL&quot;)</value>
+                  <value>(&quot;COLOUR-BLUE&quot;,&quot;RANGE-PANT&quot;,&quot;SIZE-XL&quot;)</value>
+                  <value>(&quot;COLOUR-BLUE&quot;,&quot;RANGE-SHIRT&quot;,&quot;SIZE-L&quot;)</value>
+                  <value>(&quot;COLOUR-BLUE&quot;,&quot;RANGE-SHIRT&quot;,&quot;SIZE-S&quot;)</value>
+                  <value>(&quot;COLOUR-GREEN&quot;,&quot;RANGE-JACKET&quot;,&quot;SIZE-S&quot;)</value>
+                  <value>(&quot;COLOUR-GREEN&quot;,&quot;RANGE-JACKET&quot;,&quot;SIZE-XL&quot;)</value>
+                  <value>(&quot;COLOUR-GREEN&quot;,&quot;RANGE-JACKET&quot;,&quot;SIZE-XXL&quot;)</value>
+                  <value>(&quot;COLOUR-GREEN&quot;,&quot;RANGE-OTHER&quot;,&quot;SIZE-L&quot;)</value>
+                  <value>(&quot;COLOUR-GREEN&quot;,&quot;RANGE-OTHER&quot;,&quot;SIZE-M&quot;)</value>
+                  <value>(&quot;COLOUR-GREEN&quot;,&quot;RANGE-OTHER&quot;,&quot;SIZE-XL&quot;)</value>
+                  <value>(&quot;COLOUR-GREEN&quot;,&quot;RANGE-OTHER&quot;,&quot;SIZE-XXL&quot;)</value>
+                  <value>(&quot;COLOUR-GREEN&quot;,&quot;RANGE-PANT&quot;,&quot;SIZE-M&quot;)</value>
+                  <value>(&quot;COLOUR-GREEN&quot;,&quot;RANGE-PANT&quot;,&quot;SIZE-S&quot;)</value>
+                  <value>(&quot;COLOUR-GREEN&quot;,&quot;RANGE-PANT&quot;,&quot;SIZE-XXL&quot;)</value>
+                  <value>(&quot;COLOUR-GREEN&quot;,&quot;RANGE-SHIRT&quot;,&quot;SIZE-L&quot;)</value>
+                  <value>(&quot;COLOUR-GREEN&quot;,&quot;RANGE-SHIRT&quot;,&quot;SIZE-S&quot;)</value>
+                  <value>(&quot;COLOUR-WHITE&quot;,&quot;RANGE-JACKET&quot;,&quot;SIZE-XL&quot;)</value>
+                  <value>(&quot;COLOUR-WHITE&quot;,&quot;RANGE-OTHER&quot;,&quot;SIZE-XXL&quot;)</value>
+                  <value>(&quot;COLOUR-WHITE&quot;,&quot;RANGE-PANT&quot;,&quot;SIZE-L&quot;)</value>
+                  <value>(&quot;COLOUR-WHITE&quot;,&quot;RANGE-PANT&quot;,&quot;SIZE-S&quot;)</value>
+                  <value>(&quot;COLOUR-WHITE&quot;,&quot;RANGE-PANT&quot;,&quot;SIZE-XL&quot;)</value>
+                  <value>(&quot;COLOUR-WHITE&quot;,&quot;RANGE-PANT&quot;,&quot;SIZE-XXL&quot;)</value>
+                  <value>(&quot;COLOUR-WHITE&quot;,&quot;RANGE-SHIRT&quot;,&quot;SIZE-L&quot;)</value>
+                  <value>(&quot;COLOUR-WHITE&quot;,&quot;RANGE-SHIRT&quot;,&quot;SIZE-M&quot;)</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='string' name='[Item Colour]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Item Price]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Item Quantity]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Item Range]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Item Size]' role='dimension' type='nominal' />
+            <column datatype='string' name='[VIP]' role='dimension' type='nominal' />
+            <column-instance column='[Item Price]' derivation='Avg' name='[avg:Item Price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Item Colour]' derivation='None' name='[none:Item Colour:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Item Range]' derivation='None' name='[none:Item Range:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Item Size]' derivation='None' name='[none:Item Size:nk]' pivot='key' type='nominal' />
+            <column-instance column='[VIP]' derivation='None' name='[none:VIP:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Item Quantity]' derivation='Sum' name='[sum:Item Quantity:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:VIP:nk]'>
+            <groupfilter function='member' level='[none:VIP:nk]' member='&quot;N&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:VIP:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]' field-type='quantitative' scope='rows' type='space' />
+            <format attr='width' field='[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]' value='60' />
+            <format attr='height' field='[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]' value='51' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]' />
+              <lod column='[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]' />
+              <lod column='[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]' />
+              <color column='[federated.1x9db3t0r0mgng111wb3z06fb29j].[Item Colour, Item Range, Item Size 1 (group)]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='379' />
+                <format attr='maxwidth' value='379' />
+                <format attr='minheight' value='380' />
+                <format attr='maxheight' value='380' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</rows>
+        <cols>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</cols>
+      </table>
+      <simple-id uuid='{9C709B9F-D599-431B-A169-B906D222442F}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='SampleData' name='federated.1x9db3t0r0mgng111wb3z06fb29j' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1x9db3t0r0mgng111wb3z06fb29j'>
+            <column caption='lower_profit_items' datatype='string' name='[Item Colour, Item Range, Item Size 1 (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Item Colour, Item Range, Item Size 1]' default='&quot;Other&quot;' new-bin='true'>
+                <bin default-name='true' value='&quot;(COLOUR-BLACK, RANGE-JACKET, SIZE-XL), (COLOUR-BLACK, RANGE-OTHER, SIZE-M), (COLOUR-BLACK, RANGE-OTHER, SIZE-XL) and 33 more&quot;'>
+                  <value>(&quot;COLOUR-BLACK&quot;,&quot;RANGE-JACKET&quot;,&quot;SIZE-XL&quot;)</value>
+                  <value>(&quot;COLOUR-BLACK&quot;,&quot;RANGE-OTHER&quot;,&quot;SIZE-M&quot;)</value>
+                  <value>(&quot;COLOUR-BLACK&quot;,&quot;RANGE-OTHER&quot;,&quot;SIZE-XL&quot;)</value>
+                  <value>(&quot;COLOUR-BLACK&quot;,&quot;RANGE-PANT&quot;,&quot;SIZE-L&quot;)</value>
+                  <value>(&quot;COLOUR-BLACK&quot;,&quot;RANGE-PANT&quot;,&quot;SIZE-M&quot;)</value>
+                  <value>(&quot;COLOUR-BLACK&quot;,&quot;RANGE-PANT&quot;,&quot;SIZE-XL&quot;)</value>
+                  <value>(&quot;COLOUR-BLACK&quot;,&quot;RANGE-PANT&quot;,&quot;SIZE-XXL&quot;)</value>
+                  <value>(&quot;COLOUR-BLACK&quot;,&quot;RANGE-SHIRT&quot;,&quot;SIZE-XL&quot;)</value>
+                  <value>(&quot;COLOUR-BLUE&quot;,&quot;RANGE-JACKET&quot;,&quot;SIZE-M&quot;)</value>
+                  <value>(&quot;COLOUR-BLUE&quot;,&quot;RANGE-OTHER&quot;,&quot;SIZE-L&quot;)</value>
+                  <value>(&quot;COLOUR-BLUE&quot;,&quot;RANGE-OTHER&quot;,&quot;SIZE-S&quot;)</value>
+                  <value>(&quot;COLOUR-BLUE&quot;,&quot;RANGE-OTHER&quot;,&quot;SIZE-XL&quot;)</value>
+                  <value>(&quot;COLOUR-BLUE&quot;,&quot;RANGE-OTHER&quot;,&quot;SIZE-XXL&quot;)</value>
+                  <value>(&quot;COLOUR-BLUE&quot;,&quot;RANGE-PANT&quot;,&quot;SIZE-XL&quot;)</value>
+                  <value>(&quot;COLOUR-BLUE&quot;,&quot;RANGE-SHIRT&quot;,&quot;SIZE-L&quot;)</value>
+                  <value>(&quot;COLOUR-BLUE&quot;,&quot;RANGE-SHIRT&quot;,&quot;SIZE-S&quot;)</value>
+                  <value>(&quot;COLOUR-GREEN&quot;,&quot;RANGE-JACKET&quot;,&quot;SIZE-S&quot;)</value>
+                  <value>(&quot;COLOUR-GREEN&quot;,&quot;RANGE-JACKET&quot;,&quot;SIZE-XL&quot;)</value>
+                  <value>(&quot;COLOUR-GREEN&quot;,&quot;RANGE-JACKET&quot;,&quot;SIZE-XXL&quot;)</value>
+                  <value>(&quot;COLOUR-GREEN&quot;,&quot;RANGE-OTHER&quot;,&quot;SIZE-L&quot;)</value>
+                  <value>(&quot;COLOUR-GREEN&quot;,&quot;RANGE-OTHER&quot;,&quot;SIZE-M&quot;)</value>
+                  <value>(&quot;COLOUR-GREEN&quot;,&quot;RANGE-OTHER&quot;,&quot;SIZE-XL&quot;)</value>
+                  <value>(&quot;COLOUR-GREEN&quot;,&quot;RANGE-OTHER&quot;,&quot;SIZE-XXL&quot;)</value>
+                  <value>(&quot;COLOUR-GREEN&quot;,&quot;RANGE-PANT&quot;,&quot;SIZE-M&quot;)</value>
+                  <value>(&quot;COLOUR-GREEN&quot;,&quot;RANGE-PANT&quot;,&quot;SIZE-S&quot;)</value>
+                  <value>(&quot;COLOUR-GREEN&quot;,&quot;RANGE-PANT&quot;,&quot;SIZE-XXL&quot;)</value>
+                  <value>(&quot;COLOUR-GREEN&quot;,&quot;RANGE-SHIRT&quot;,&quot;SIZE-L&quot;)</value>
+                  <value>(&quot;COLOUR-GREEN&quot;,&quot;RANGE-SHIRT&quot;,&quot;SIZE-S&quot;)</value>
+                  <value>(&quot;COLOUR-WHITE&quot;,&quot;RANGE-JACKET&quot;,&quot;SIZE-XL&quot;)</value>
+                  <value>(&quot;COLOUR-WHITE&quot;,&quot;RANGE-OTHER&quot;,&quot;SIZE-XXL&quot;)</value>
+                  <value>(&quot;COLOUR-WHITE&quot;,&quot;RANGE-PANT&quot;,&quot;SIZE-L&quot;)</value>
+                  <value>(&quot;COLOUR-WHITE&quot;,&quot;RANGE-PANT&quot;,&quot;SIZE-S&quot;)</value>
+                  <value>(&quot;COLOUR-WHITE&quot;,&quot;RANGE-PANT&quot;,&quot;SIZE-XL&quot;)</value>
+                  <value>(&quot;COLOUR-WHITE&quot;,&quot;RANGE-PANT&quot;,&quot;SIZE-XXL&quot;)</value>
+                  <value>(&quot;COLOUR-WHITE&quot;,&quot;RANGE-SHIRT&quot;,&quot;SIZE-L&quot;)</value>
+                  <value>(&quot;COLOUR-WHITE&quot;,&quot;RANGE-SHIRT&quot;,&quot;SIZE-M&quot;)</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='string' name='[Item Colour]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Item Profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Item Range]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Item Size]' role='dimension' type='nominal' />
+            <column datatype='date' name='[PurchaseDate]' role='dimension' type='ordinal' />
+            <column-instance column='[PurchaseDate]' derivation='None' name='[none:PurchaseDate:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Item Profit]' derivation='Sum' name='[sum:Item Profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PurchaseDate]' derivation='Month-Trunc' name='[tmn:PurchaseDate:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:PurchaseDate:qk]' included-values='in-range'>
+            <max>#2020-12-31#</max>
+          </filter>
+          <slices>
+            <column>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:PurchaseDate:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.1x9db3t0r0mgng111wb3z06fb29j].[Item Colour, Item Range, Item Size 1 (group)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Profit:qk]</rows>
+        <cols>[federated.1x9db3t0r0mgng111wb3z06fb29j].[tmn:PurchaseDate:qk]</cols>
+      </table>
+      <simple-id uuid='{73CFE5F1-C07F-4182-8E87-8095BCFC6B5A}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1x9db3t0r0mgng111wb3z06fb29j].[Item Colour, Item Range, Item Size 1 (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>146.76400000000001</value>
+                <value>&quot;COLOUR-WHITE&quot;</value>
+                <value>&quot;RANGE-SHIRT&quot;</value>
+                <value>&quot;SIZE-M&quot;</value>
+                <value>156</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>99.973076923076931</value>
+                <value>&quot;COLOUR-WHITE&quot;</value>
+                <value>&quot;RANGE-SHIRT&quot;</value>
+                <value>&quot;SIZE-L&quot;</value>
+                <value>115</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>141.88866666666669</value>
+                <value>&quot;COLOUR-WHITE&quot;</value>
+                <value>&quot;RANGE-PANT&quot;</value>
+                <value>&quot;SIZE-XXL&quot;</value>
+                <value>165</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>156.42769230769233</value>
+                <value>&quot;COLOUR-WHITE&quot;</value>
+                <value>&quot;RANGE-PANT&quot;</value>
+                <value>&quot;SIZE-XL&quot;</value>
+                <value>148</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>149.40466666666666</value>
+                <value>&quot;COLOUR-WHITE&quot;</value>
+                <value>&quot;RANGE-PANT&quot;</value>
+                <value>&quot;SIZE-S&quot;</value>
+                <value>150</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>113.82499999999997</value>
+                <value>&quot;COLOUR-WHITE&quot;</value>
+                <value>&quot;RANGE-PANT&quot;</value>
+                <value>&quot;SIZE-L&quot;</value>
+                <value>153</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>157.50035714285713</value>
+                <value>&quot;COLOUR-WHITE&quot;</value>
+                <value>&quot;RANGE-OTHER&quot;</value>
+                <value>&quot;SIZE-XXL&quot;</value>
+                <value>141</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>136.17466666666667</value>
+                <value>&quot;COLOUR-WHITE&quot;</value>
+                <value>&quot;RANGE-JACKET&quot;</value>
+                <value>&quot;SIZE-XL&quot;</value>
+                <value>142</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>138.37192307692311</value>
+                <value>&quot;COLOUR-GREEN&quot;</value>
+                <value>&quot;RANGE-SHIRT&quot;</value>
+                <value>&quot;SIZE-S&quot;</value>
+                <value>138</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>135.53</value>
+                <value>&quot;COLOUR-GREEN&quot;</value>
+                <value>&quot;RANGE-SHIRT&quot;</value>
+                <value>&quot;SIZE-L&quot;</value>
+                <value>164</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>116.06724137931032</value>
+                <value>&quot;COLOUR-GREEN&quot;</value>
+                <value>&quot;RANGE-PANT&quot;</value>
+                <value>&quot;SIZE-XXL&quot;</value>
+                <value>137</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>95.310000000000031</value>
+                <value>&quot;COLOUR-GREEN&quot;</value>
+                <value>&quot;RANGE-PANT&quot;</value>
+                <value>&quot;SIZE-S&quot;</value>
+                <value>159</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>127.86999999999999</value>
+                <value>&quot;COLOUR-GREEN&quot;</value>
+                <value>&quot;RANGE-PANT&quot;</value>
+                <value>&quot;SIZE-M&quot;</value>
+                <value>164</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>121.05903225806455</value>
+                <value>&quot;COLOUR-GREEN&quot;</value>
+                <value>&quot;RANGE-OTHER&quot;</value>
+                <value>&quot;SIZE-XXL&quot;</value>
+                <value>152</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>183.37249999999997</value>
+                <value>&quot;COLOUR-GREEN&quot;</value>
+                <value>&quot;RANGE-OTHER&quot;</value>
+                <value>&quot;SIZE-XL&quot;</value>
+                <value>167</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>126.39133333333338</value>
+                <value>&quot;COLOUR-GREEN&quot;</value>
+                <value>&quot;RANGE-OTHER&quot;</value>
+                <value>&quot;SIZE-M&quot;</value>
+                <value>136</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>185.43444444444447</value>
+                <value>&quot;COLOUR-GREEN&quot;</value>
+                <value>&quot;RANGE-OTHER&quot;</value>
+                <value>&quot;SIZE-L&quot;</value>
+                <value>129</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>168.48368421052629</value>
+                <value>&quot;COLOUR-GREEN&quot;</value>
+                <value>&quot;RANGE-JACKET&quot;</value>
+                <value>&quot;SIZE-XXL&quot;</value>
+                <value>95</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>138.199375</value>
+                <value>&quot;COLOUR-GREEN&quot;</value>
+                <value>&quot;RANGE-JACKET&quot;</value>
+                <value>&quot;SIZE-XL&quot;</value>
+                <value>166</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>86.531153846153842</value>
+                <value>&quot;COLOUR-GREEN&quot;</value>
+                <value>&quot;RANGE-JACKET&quot;</value>
+                <value>&quot;SIZE-S&quot;</value>
+                <value>113</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>173.14344827586206</value>
+                <value>&quot;COLOUR-BLUE&quot;</value>
+                <value>&quot;RANGE-SHIRT&quot;</value>
+                <value>&quot;SIZE-S&quot;</value>
+                <value>152</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>166.62481481481481</value>
+                <value>&quot;COLOUR-BLUE&quot;</value>
+                <value>&quot;RANGE-SHIRT&quot;</value>
+                <value>&quot;SIZE-L&quot;</value>
+                <value>127</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>173.36125000000004</value>
+                <value>&quot;COLOUR-BLUE&quot;</value>
+                <value>&quot;RANGE-PANT&quot;</value>
+                <value>&quot;SIZE-XL&quot;</value>
+                <value>139</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>117.69548387096773</value>
+                <value>&quot;COLOUR-BLUE&quot;</value>
+                <value>&quot;RANGE-OTHER&quot;</value>
+                <value>&quot;SIZE-XXL&quot;</value>
+                <value>144</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>134.86699999999999</value>
+                <value>&quot;COLOUR-BLUE&quot;</value>
+                <value>&quot;RANGE-OTHER&quot;</value>
+                <value>&quot;SIZE-XL&quot;</value>
+                <value>140</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>80.058928571428595</value>
+                <value>&quot;COLOUR-BLUE&quot;</value>
+                <value>&quot;RANGE-OTHER&quot;</value>
+                <value>&quot;SIZE-S&quot;</value>
+                <value>143</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>148.10777777777778</value>
+                <value>&quot;COLOUR-BLUE&quot;</value>
+                <value>&quot;RANGE-OTHER&quot;</value>
+                <value>&quot;SIZE-L&quot;</value>
+                <value>147</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>126.81083333333333</value>
+                <value>&quot;COLOUR-BLUE&quot;</value>
+                <value>&quot;RANGE-JACKET&quot;</value>
+                <value>&quot;SIZE-M&quot;</value>
+                <value>145</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>191.65965517241378</value>
+                <value>&quot;COLOUR-BLACK&quot;</value>
+                <value>&quot;RANGE-SHIRT&quot;</value>
+                <value>&quot;SIZE-XL&quot;</value>
+                <value>160</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>174.7169696969697</value>
+                <value>&quot;COLOUR-BLACK&quot;</value>
+                <value>&quot;RANGE-PANT&quot;</value>
+                <value>&quot;SIZE-XXL&quot;</value>
+                <value>167</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>98.768709677419366</value>
+                <value>&quot;COLOUR-BLACK&quot;</value>
+                <value>&quot;RANGE-PANT&quot;</value>
+                <value>&quot;SIZE-XL&quot;</value>
+                <value>165</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>92.260357142857146</value>
+                <value>&quot;COLOUR-BLACK&quot;</value>
+                <value>&quot;RANGE-PANT&quot;</value>
+                <value>&quot;SIZE-M&quot;</value>
+                <value>144</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>192.7885714285714</value>
+                <value>&quot;COLOUR-BLACK&quot;</value>
+                <value>&quot;RANGE-PANT&quot;</value>
+                <value>&quot;SIZE-L&quot;</value>
+                <value>158</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>93.712592592592586</value>
+                <value>&quot;COLOUR-BLACK&quot;</value>
+                <value>&quot;RANGE-OTHER&quot;</value>
+                <value>&quot;SIZE-XL&quot;</value>
+                <value>131</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>105.1395</value>
+                <value>&quot;COLOUR-BLACK&quot;</value>
+                <value>&quot;RANGE-OTHER&quot;</value>
+                <value>&quot;SIZE-M&quot;</value>
+                <value>102</value>
+              </tuple>
+            </tuple-reference>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[avg:Item Price:qk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+                  <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[sum:Item Quantity:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>165.68684210526317</value>
+                <value>&quot;COLOUR-BLACK&quot;</value>
+                <value>&quot;RANGE-JACKET&quot;</value>
+                <value>&quot;SIZE-XL&quot;</value>
+                <value>109</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Gender:nk]</field>
+            <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Colour:nk]</field>
+            <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Range:nk]</field>
+            <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Item Size:nk]</field>
+            <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:VIP:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A8310824-D8B9-42B0-8D3E-C815F023FC3D}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:PurchaseDate:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.1x9db3t0r0mgng111wb3z06fb29j].[Item Colour, Item Range, Item Size 1 (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[Item Colour, Item Range, Item Size (group)]</field>
+            <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[Item Colour, Item Range, Item Size 1 (group)]</field>
+            <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:Country:nk]</field>
+            <field>[federated.1x9db3t0r0mgng111wb3z06fb29j].[none:PurchaseDate:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5A118217-7603-4065-B881-D13BC9BEB0B8}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 4' width='192'>
+      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
+      Gf8/970oIJ49eAEAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 5' width='192'>
+      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
+      kNLU/j9I/bhwV5S+oQAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
